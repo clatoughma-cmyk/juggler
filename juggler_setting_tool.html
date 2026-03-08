@@ -25,6 +25,10 @@
 
 html {
 background: #0a0a0f;
+box-sizing: border-box;
+}
+*, *::before, *::after {
+box-sizing: border-box;
 }
 body {
 background: #0a0a0f;
@@ -51,7 +55,7 @@ background: radial-gradient(ellipse at 50% -30%, rgba(255,59,92,0.15) 0%, transp
 }
 header h1 {
 font-family: ‘Bebas Neue’, cursive;
-font-size: clamp(2.4rem, 8vw, 4.5rem);
+font-size: clamp(1.8rem, 6vw, 3rem);
 letter-spacing: 0.08em;
 color: #fff;
 text-shadow: 0 0 30px rgba(255,59,92,0.6), 0 2px 0 #000;
@@ -336,6 +340,7 @@ margin-bottom: 20px;
 
 /* calc section */
 .calc-box {
+overflow: hidden;
 background: #13131c;
 border: 1px solid #2a2a40;
 border-radius: 12px;
@@ -350,13 +355,16 @@ color: #ffb800;
 }
 .calc-row {
 display: flex;
-gap: 10px;
+gap: 8px;
 flex-wrap: wrap;
 margin-bottom: 10px;
+width: 100%;
+box-sizing: border-box;
 }
 .calc-field {
 flex: 1;
-min-width: 100px;
+min-width: 0;
+width: 0;
 }
 .calc-field label {
 display: block;
@@ -368,6 +376,7 @@ font-weight: 700;
 }
 .calc-field input {
 width: 100%;
+box-sizing: border-box;
 background: #1e1e2e;
 border: 1px solid #3a3a58;
 border-radius: 6px;
@@ -924,7 +933,7 @@ border-top: 1px solid #2a2a40;
   <div style="font-size:0.72rem; color:#b0b0cc; margin-bottom:6px;">直接入力したい場合はここに上書きできます</div>
   <div class="calc-row" style="margin-bottom:0;">
     <div class="calc-field">
-      <label>ぶどう（自分分）</label>
+      <label>ぶどう（自分）</label>
       <input type="number" id="m-budou" placeholder="例: 170">
     </div>
     <div class="calc-field">
