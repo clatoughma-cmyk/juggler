@@ -27,8 +27,8 @@ html {
 background: #0a0a0f;
 }
 body {
-background: var(–bg);
-color: var(–text);
+background: #0a0a0f;
+color: #f0f0ff;
 font-family: ‘Noto Sans JP’, sans-serif;
 min-height: 100vh;
 overflow-x: hidden;
@@ -39,7 +39,7 @@ header {
 position: relative;
 padding: 32px 24px 20px;
 background: linear-gradient(135deg, #0a0a0f 60%, #1a0a20);
-border-bottom: 2px solid var(–accent);
+border-bottom: 2px solid #ff3b5c;
 text-align: center;
 overflow: hidden;
 }
@@ -58,7 +58,7 @@ text-shadow: 0 0 30px rgba(255,59,92,0.6), 0 2px 0 #000;
 position: relative;
 }
 header h1 span {
-color: var(–accent);
+color: #ff3b5c;
 }
 header p {
 color: #a0a0c0;
@@ -73,7 +73,7 @@ position: relative;
 padding: 16px 16px 0;
 overflow-x: auto;
 scrollbar-width: none;
-background: var(–surface);
+background: #13131c;
 }
 .tab-wrap::-webkit-scrollbar { display: none; }
 .tabs {
@@ -82,8 +82,8 @@ gap: 4px;
 min-width: max-content;
 }
 .tab-btn {
-background: var(–bg);
-border: 1px solid var(–border);
+background: #0a0a0f;
+border: 1px solid #2a2a40;
 color: #c8c8e0;
 font-family: ‘Noto Sans JP’, sans-serif;
 font-size: 0.75rem;
@@ -94,12 +94,12 @@ cursor: pointer;
 transition: all 0.2s;
 white-space: nowrap;
 }
-.tab-btn:hover { color: var(–text); border-color: #a0a0c0; }
+.tab-btn:hover { color: #f0f0ff; border-color: #a0a0c0; }
 .tab-btn.active {
-background: var(–surface2);
-color: var(–accent);
-border-color: var(–accent);
-border-bottom-color: var(–surface2);
+background: #1c1c2a;
+color: #ff3b5c;
+border-color: #ff3b5c;
+border-bottom-color: #1c1c2a;
 }
 
 /* Main content */
@@ -125,9 +125,9 @@ align-items: flex-start;
 gap: 16px;
 margin-bottom: 20px;
 padding: 18px 20px;
-background: var(–surface);
+background: #13131c;
 border-radius: 12px;
-border: 1px solid var(–border);
+border: 1px solid #2a2a40;
 position: relative;
 overflow: hidden;
 }
@@ -139,7 +139,7 @@ width: 120px; height: 100%;
 background: linear-gradient(270deg, rgba(255,59,92,0.06), transparent);
 }
 .machine-badge {
-background: var(–accent);
+background: #ff3b5c;
 color: #fff;
 font-size: 0.65rem;
 font-weight: 900;
@@ -161,9 +161,9 @@ margin-top: 4px;
 }
 
 .judge-point {
-background: var(–surface);
-border: 1px solid var(–border);
-border-left: 3px solid var(–accent2);
+background: #13131c;
+border: 1px solid #2a2a40;
+border-left: 3px solid #ffb800;
 border-radius: 8px;
 padding: 14px 16px;
 margin-bottom: 20px;
@@ -172,7 +172,7 @@ line-height: 1.8;
 color: #e0e0f4;
 }
 .judge-point strong {
-color: var(–accent2);
+color: #ffb800;
 display: block;
 font-size: 0.72rem;
 letter-spacing: 0.12em;
@@ -180,14 +180,14 @@ margin-bottom: 6px;
 }
 .judge-point ul { padding-left: 16px; }
 .judge-point li { margin-bottom: 4px; }
-.judge-point .hi { color: var(–teal); font-weight: 700; }
-.judge-point .warn { color: var(–accent); font-weight: 700; }
+.judge-point .hi { color: #00d4aa; font-weight: 700; }
+.judge-point .warn { color: #ff3b5c; font-weight: 700; }
 
 /* Spec table */
 .table-wrap {
 overflow-x: auto;
 border-radius: 10px;
-border: 1px solid var(–border);
+border: 1px solid #2a2a40;
 margin-bottom: 20px;
 }
 table {
@@ -197,28 +197,28 @@ font-size: 0.82rem;
 min-width: 500px;
 }
 thead th {
-background: var(–surface2);
+background: #1c1c2a;
 color: #a0a0c0;
 font-size: 0.68rem;
 font-weight: 700;
 letter-spacing: 0.1em;
 padding: 10px 12px;
 text-align: center;
-border-bottom: 1px solid var(–border);
+border-bottom: 1px solid #2a2a40;
 }
 tbody tr {
-background: var(–surface);
-border-bottom: 1px solid var(–border);
+background: #13131c;
+border-bottom: 1px solid #2a2a40;
 transition: background 0.15s;
 }
 tbody tr:last-child { border-bottom: none; }
-tbody tr:hover { background: var(–surface2); }
+tbody tr:hover { background: #1c1c2a; }
 
 tbody td {
 padding: 10px 12px;
 text-align: center;
 font-size: 0.83rem;
-color: var(–text);
+color: #f0f0ff;
 }
 .set-cell {
 font-weight: 900;
@@ -226,17 +226,17 @@ font-size: 1.05rem;
 width: 40px;
 }
 /* setting colors */
-.s1 { color: var(–text); }
-.s2 { color: var(–text); }
-.s3 { color: var(–text); }
-.s4 { color: var(–text); }
+.s1 { color: #f0f0ff; }
+.s2 { color: #f0f0ff; }
+.s3 { color: #f0f0ff; }
+.s4 { color: #f0f0ff; }
 .s5 { color: #ffd060; }
-.s6 { color: var(–accent); text-shadow: 0 0 12px rgba(255,59,92,0.5); }
+.s6 { color: #ff3b5c; text-shadow: 0 0 12px rgba(255,59,92,0.5); }
 
 .judge-point .warn { color: #ff9090; font-weight: 700; }
 
-.cell-good { color: var(–teal); font-weight: 600; }
-.cell-best { color: var(–gold); font-weight: 700; }
+.cell-good { color: #00d4aa; font-weight: 600; }
+.cell-best { color: #f5d020; font-weight: 700; }
 .warn { color: #ff7a7a; font-weight: 600; }
 
 /* 機械割 bars */
@@ -249,7 +249,7 @@ justify-content: flex-end;
 .bar-bg {
 width: 60px;
 height: 6px;
-background: var(–border);
+background: #2a2a40;
 border-radius: 3px;
 overflow: hidden;
 }
@@ -276,8 +276,8 @@ grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 gap: 10px;
 }
 .diff-card {
-background: var(–surface);
-border: 1px solid var(–border);
+background: #13131c;
+border: 1px solid #2a2a40;
 border-radius: 8px;
 padding: 12px 14px;
 position: relative;
@@ -289,9 +289,9 @@ position: absolute;
 top:0; left:0;
 width: 3px; height:100%;
 }
-.diff-card.lv1::before { background: var(–muted); }
-.diff-card.lv2::before { background: var(–teal); }
-.diff-card.lv3::before { background: var(–gold); }
+.diff-card.lv1::before { background: #a0a0be; }
+.diff-card.lv2::before { background: #00d4aa; }
+.diff-card.lv3::before { background: #f5d020; }
 .diff-card-label {
 font-size: 0.68rem;
 color: #a0a0c0;
@@ -307,8 +307,8 @@ font-size: 0.85rem;
 margin-top: 2px;
 letter-spacing: 0.05em;
 }
-.star-on { color: var(–accent2); }
-.star-off { color: var(–border); }
+.star-on { color: #ffb800; }
+.star-off { color: #2a2a40; }
 
 /* Section heading */
 .sec-title {
@@ -322,9 +322,9 @@ text-transform: uppercase;
 
 /* Tip box */
 .tip-box {
-background: var(–surface);
-border: 1px solid var(–border);
-border-left: 3px solid var(–teal);
+background: #13131c;
+border: 1px solid #2a2a40;
+border-left: 3px solid #00d4aa;
 border-radius: 8px;
 padding: 12px 16px;
 font-size: 0.82rem;
@@ -332,12 +332,12 @@ line-height: 1.9;
 color: #e0e0f4;
 margin-bottom: 20px;
 }
-.tip-box b { color: var(–teal); }
+.tip-box b { color: #00d4aa; }
 
 /* calc section */
 .calc-box {
-background: var(–surface);
-border: 1px solid var(–border);
+background: #13131c;
+border: 1px solid #2a2a40;
 border-radius: 12px;
 padding: 18px 20px;
 margin-bottom: 20px;
@@ -346,7 +346,7 @@ margin-bottom: 20px;
 font-size: 0.9rem;
 font-weight: 900;
 margin-bottom: 14px;
-color: var(–accent2);
+color: #ffb800;
 }
 .calc-row {
 display: flex;
@@ -371,7 +371,7 @@ width: 100%;
 background: #1e1e2e;
 border: 1px solid #3a3a58;
 border-radius: 6px;
-color: var(–text);
+color: #f0f0ff;
 font-family: ‘Noto Sans JP’, sans-serif;
 font-size: 0.95rem;
 padding: 9px 11px;
@@ -380,27 +380,27 @@ transition: border-color 0.2s, background 0.2s;
 }
 .calc-field input::placeholder { color: #5a5a78; }
 .calc-field input:focus {
-border-color: var(–accent);
+border-color: #ff3b5c;
 background: #22223a;
 }
 .calc-result {
 margin-top: 14px;
 padding: 12px 14px;
-background: var(–bg);
+background: #0a0a0f;
 border-radius: 8px;
-border: 1px solid var(–border);
+border: 1px solid #2a2a40;
 font-size: 0.82rem;
 line-height: 1.9;
 }
 .calc-result .res-label { color: #a0a0c0; font-size: 0.72rem; }
-.calc-result .res-big { font-size: 1.1rem; font-weight: 900; color: var(–teal); }
+.calc-result .res-big { font-size: 1.1rem; font-weight: 900; color: #00d4aa; }
 
 footer {
 text-align: center;
 color: #a0a0c0;
 font-size: 0.7rem;
 padding: 20px;
-border-top: 1px solid var(–border);
+border-top: 1px solid #2a2a40;
 }
 </style>
 
@@ -807,7 +807,7 @@ border-top: 1px solid var(–border);
 
   <div style="margin-bottom:16px;">
     <label style="font-size:0.75rem; color:#c0c0d8; font-weight:700; letter-spacing:0.08em; display:block; margin-bottom:6px;">機種を選ぶ</label>
-    <select id="g-machine" style="background:var(--bg); border:1px solid var(--border); border-radius:6px; color:var(--text); font-family:'Noto Sans JP',sans-serif; font-size:0.85rem; padding:7px 10px; width:100%; outline:none;">
+    <select id="g-machine" style="background:#0a0a0f; border:1px solid #2a2a40; border-radius:6px; color:#f0f0ff; font-family:'Noto Sans JP',sans-serif; font-size:0.85rem; padding:7px 10px; width:100%; outline:none;">
       <option value="aim">アイムジャグラーEX / ネオアイム</option>
       <option value="my">マイジャグラーV</option>
       <option value="funky">ファンキージャグラー2</option>
@@ -843,7 +843,7 @@ border-top: 1px solid var(–border);
   <!-- ② 現在の総数（今見えている数字） -->
 
   <div style="background:#111118; border:1px solid rgba(0,212,170,0.35); border-radius:10px; padding:14px 16px; margin-bottom:12px;">
-    <div style="font-size:0.75rem; color:var(--teal); font-weight:700; letter-spacing:0.08em; margin-bottom:4px;">② 現在の総数（今データ機に表示されている数字）</div>
+    <div style="font-size:0.75rem; color:#00d4aa; font-weight:700; letter-spacing:0.08em; margin-bottom:4px;">② 現在の総数（今データ機に表示されている数字）</div>
     <div style="font-size:0.72rem; color:#b0b0cc; margin-bottom:12px;">自分のG数・BIG・REGは①との差分から自動計算します</div>
     <div class="calc-row">
       <div class="calc-field">
@@ -862,18 +862,18 @@ border-top: 1px solid var(–border);
 
 ```
 <!-- カウンター＋自分カウント入力 -->
-<div style="border-top:1px solid var(--border); margin-top:10px; padding-top:12px;">
+<div style="border-top:1px solid #2a2a40; margin-top:10px; padding-top:12px;">
   <div style="font-size:0.75rem; color:#c0c0d8; font-weight:700; letter-spacing:0.08em; margin-bottom:10px;">🎰 カウンター（タップで+1・チェッカーに自動反映）</div>
 
   <!-- ぶどう -->
   <div style="display:flex; align-items:center; justify-content:space-between; background:#1e1e2e; border:1px solid #3a3a58; border-radius:8px; padding:12px 14px; margin-bottom:10px;">
     <div>
       <div style="font-size:0.8rem; color:#c0c0d8; font-weight:700; margin-bottom:4px;">ぶどう</div>
-      <div style="font-size:1.6rem; font-weight:900; color:var(--gold)" id="cnt-budou-disp">0</div>
+      <div style="font-size:1.6rem; font-weight:900; color:#f5d020" id="cnt-budou-disp">0</div>
     </div>
     <div style="display:flex; gap:8px; align-items:center;">
       <button onclick="countTap('m-budou','cnt-budou-disp',-1)" style="width:44px;height:44px;border-radius:50%;background:#2a2a40;border:1px solid #4a4a68;color:#d0d0e8;font-size:1.3rem;cursor:pointer;">−</button>
-      <button onclick="countTap('m-budou','cnt-budou-disp',1)" style="width:64px;height:64px;border-radius:50%;background:var(--gold);border:none;color:#000;font-size:1.7rem;font-weight:900;cursor:pointer;box-shadow:0 0 16px rgba(245,208,32,0.5);">+</button>
+      <button onclick="countTap('m-budou','cnt-budou-disp',1)" style="width:64px;height:64px;border-radius:50%;background:#f5d020;border:none;color:#000;font-size:1.7rem;font-weight:900;cursor:pointer;box-shadow:0 0 16px rgba(245,208,32,0.5);">+</button>
     </div>
   </div>
 
@@ -881,11 +881,11 @@ border-top: 1px solid var(–border);
   <div style="display:flex; align-items:center; justify-content:space-between; background:#1e1e2e; border:1px solid #3a3a58; border-radius:8px; padding:12px 14px; margin-bottom:10px;">
     <div>
       <div style="font-size:0.8rem; color:#c0c0d8; font-weight:700; margin-bottom:4px;">🍒 チェリ重BIG</div>
-      <div style="font-size:1.6rem; font-weight:900; color:var(--accent2)" id="cnt-cbig-disp">0</div>
+      <div style="font-size:1.6rem; font-weight:900; color:#ffb800" id="cnt-cbig-disp">0</div>
     </div>
     <div style="display:flex; gap:8px; align-items:center;">
       <button onclick="countTap('m-cbig','cnt-cbig-disp',-1)" style="width:44px;height:44px;border-radius:50%;background:#2a2a40;border:1px solid #4a4a68;color:#d0d0e8;font-size:1.3rem;cursor:pointer;">−</button>
-      <button onclick="countTap('m-cbig','cnt-cbig-disp',1)" style="width:64px;height:64px;border-radius:50%;background:var(--accent2);border:none;color:#000;font-size:1.7rem;font-weight:900;cursor:pointer;box-shadow:0 0 16px rgba(255,184,0,0.5);">+</button>
+      <button onclick="countTap('m-cbig','cnt-cbig-disp',1)" style="width:64px;height:64px;border-radius:50%;background:#ffb800;border:none;color:#000;font-size:1.7rem;font-weight:900;cursor:pointer;box-shadow:0 0 16px rgba(255,184,0,0.5);">+</button>
     </div>
   </div>
 
@@ -893,11 +893,11 @@ border-top: 1px solid var(–border);
   <div style="display:flex; align-items:center; justify-content:space-between; background:#1e1e2e; border:1px solid #3a3a58; border-radius:8px; padding:12px 14px; margin-bottom:10px;">
     <div>
       <div style="font-size:0.8rem; color:#c0c0d8; font-weight:700; margin-bottom:4px;">🍒 チェリ重REG</div>
-      <div style="font-size:1.6rem; font-weight:900; color:var(--teal)" id="cnt-creg-disp">0</div>
+      <div style="font-size:1.6rem; font-weight:900; color:#00d4aa" id="cnt-creg-disp">0</div>
     </div>
     <div style="display:flex; gap:8px; align-items:center;">
       <button onclick="countTap('m-creg','cnt-creg-disp',-1)" style="width:44px;height:44px;border-radius:50%;background:#2a2a40;border:1px solid #4a4a68;color:#d0d0e8;font-size:1.3rem;cursor:pointer;">−</button>
-      <button onclick="countTap('m-creg','cnt-creg-disp',1)" style="width:64px;height:64px;border-radius:50%;background:var(--teal);border:none;color:#000;font-size:1.7rem;font-weight:900;cursor:pointer;box-shadow:0 0 16px rgba(0,212,170,0.5);">+</button>
+      <button onclick="countTap('m-creg','cnt-creg-disp',1)" style="width:64px;height:64px;border-radius:50%;background:#00d4aa;border:none;color:#000;font-size:1.7rem;font-weight:900;cursor:pointer;box-shadow:0 0 16px rgba(0,212,170,0.5);">+</button>
     </div>
   </div>
 
@@ -939,7 +939,7 @@ border-top: 1px solid var(–border);
 </div>
 
 <!-- 自分分の自動計算表示 -->
-<div id="my-auto" style="display:none; margin-top:12px; padding:10px 12px; background:var(--surface2); border-radius:8px; font-size:0.78rem; color:#c0c0d8; line-height:2.0;">
+<div id="my-auto" style="display:none; margin-top:12px; padding:10px 12px; background:#1c1c2a; border-radius:8px; font-size:0.78rem; color:#c0c0d8; line-height:2.0;">
 </div>
 ```
 
@@ -953,7 +953,7 @@ border-top: 1px solid var(–border);
 
 <button id="save-btn" onclick="copyUrl()" style="
 display:block; width:100%; margin-top:14px;
-background:var(--surface2); border:1px solid #3a3a58;
+background:#1c1c2a; border:1px solid #3a3a58;
 border-radius:8px; color:#c0c0d8; font-family:'Noto Sans JP',sans-serif;
 font-size:0.82rem; font-weight:700; padding:11px;
 cursor:pointer; letter-spacing:0.08em;
@@ -1083,7 +1083,7 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
     function onSuccess() {
       if (btn) {
         btn.textContent = '✓ コピーしました';
-        btn.style.background = 'var(--teal)';
+        btn.style.background = '#00d4aa';
         btn.style.color = '#000';
         setTimeout(() => {
           btn.textContent = '📋 URLをコピーして保存';
@@ -1156,13 +1156,13 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★★★☆',
       cherryNote: 'チェリー重複REGに設定差あり（設定1→6で約1.6倍）。単独REGと合わせて判断すると精度UP。',
       sregThresholds: [
-        { max: 320, label: '単独REG 1/320以下', color: 'var(--accent)', msg: '優秀！設定⑤〜⑥水準' },
-        { max: 380, label: '単独REG 1/320〜380', color: 'var(--gold)', msg: '設定④〜⑤水準' },
-        { max: 430, label: '単独REG 1/380〜430', color: 'var(--teal)', msg: '設定③前後' },
+        { max: 320, label: '単独REG 1/320以下', color: '#ff3b5c', msg: '優秀！設定⑤〜⑥水準' },
+        { max: 380, label: '単独REG 1/320〜380', color: '#f5d020', msg: '設定④〜⑤水準' },
+        { max: 430, label: '単独REG 1/380〜430', color: '#00d4aa', msg: '設定③前後' },
       ],
       cregThresholds: [
-        { max: 700, color: 'var(--accent)', msg: 'チェリ重REG優秀！高設定の補強材料に' },
-        { max: 900, color: 'var(--gold)', msg: 'チェリ重REGやや良好' },
+        { max: 700, color: '#ff3b5c', msg: 'チェリ重REG優秀！高設定の補強材料に' },
+        { max: 900, color: '#f5d020', msg: 'チェリ重REGやや良好' },
       ]
     },
     my: {
@@ -1170,13 +1170,13 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★★☆☆',
       cherryNote: '単独REGに2倍の設定差があるため単独REGが主役。チェリ重REGにも1.5倍の設定差あり補完的に有効。',
       sregThresholds: [
-        { max: 250, label: '単独REG 1/250以下', color: 'var(--accent)', msg: '非常に優秀！設定⑥水準' },
-        { max: 290, label: '単独REG 1/250〜290', color: 'var(--gold)', msg: '設定⑤〜⑥水準' },
-        { max: 340, label: '単独REG 1/290〜340', color: 'var(--teal)', msg: '設定④〜⑤水準' },
+        { max: 250, label: '単独REG 1/250以下', color: '#ff3b5c', msg: '非常に優秀！設定⑥水準' },
+        { max: 290, label: '単独REG 1/250〜290', color: '#f5d020', msg: '設定⑤〜⑥水準' },
+        { max: 340, label: '単独REG 1/290〜340', color: '#00d4aa', msg: '設定④〜⑤水準' },
       ],
       cregThresholds: [
-        { max: 550, color: 'var(--accent)', msg: 'チェリ重REG優秀！設定⑤〜⑥の補強材料' },
-        { max: 750, color: 'var(--gold)', msg: 'チェリ重REGやや良好' },
+        { max: 550, color: '#ff3b5c', msg: 'チェリ重REG優秀！設定⑤〜⑥の補強材料' },
+        { max: 750, color: '#f5d020', msg: 'チェリ重REGやや良好' },
       ]
     },
     funky: {
@@ -1184,13 +1184,13 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★★★☆',
       cherryNote: '単独REGとチェリ重REGの両方に設定差あり。BIG確率も高いのでBIG+チェリ重BIGの合計を見るのも有効。',
       sregThresholds: [
-        { max: 310, color: 'var(--accent)', msg: '単独REG優秀！設定⑤〜⑥水準' },
-        { max: 370, color: 'var(--gold)', msg: '設定④〜⑤水準' },
-        { max: 430, color: 'var(--teal)', msg: '設定③〜④水準' },
+        { max: 310, color: '#ff3b5c', msg: '単独REG優秀！設定⑤〜⑥水準' },
+        { max: 370, color: '#f5d020', msg: '設定④〜⑤水準' },
+        { max: 430, color: '#00d4aa', msg: '設定③〜④水準' },
       ],
       cregThresholds: [
-        { max: 600, color: 'var(--accent)', msg: 'チェリ重REG非常に優秀！' },
-        { max: 800, color: 'var(--gold)', msg: 'チェリ重REG良好' },
+        { max: 600, color: '#ff3b5c', msg: 'チェリ重REG非常に優秀！' },
+        { max: 800, color: '#f5d020', msg: 'チェリ重REG良好' },
       ]
     },
     happy: {
@@ -1198,13 +1198,13 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★★★★',
       cherryNote: '単独ボーナスの設定差が最も小さい機種。チェリー重複率（同時当選率）が最重要判別要素！単独REGより先にチェリ重REGをチェック。',
       sregThresholds: [
-        { max: 280, color: 'var(--accent)', msg: '単独REG良好（ハッピーは参考程度）' },
-        { max: 330, color: 'var(--gold)', msg: '単独REGやや良好' },
+        { max: 280, color: '#ff3b5c', msg: '単独REG良好（ハッピーは参考程度）' },
+        { max: 330, color: '#f5d020', msg: '単独REGやや良好' },
       ],
       cregThresholds: [
-        { max: 500, color: 'var(--accent)', msg: '🎯 チェリ重REG非常に優秀！ハッピーで最重要サイン' },
-        { max: 650, color: 'var(--gold)', msg: 'チェリ重REG良好！高設定の可能性UP' },
-        { max: 800, color: 'var(--teal)', msg: 'チェリ重REGやや良好' },
+        { max: 500, color: '#ff3b5c', msg: '🎯 チェリ重REG非常に優秀！ハッピーで最重要サイン' },
+        { max: 650, color: '#f5d020', msg: 'チェリ重REG良好！高設定の可能性UP' },
+        { max: 800, color: '#00d4aa', msg: 'チェリ重REGやや良好' },
       ]
     },
     gogo: {
@@ -1212,11 +1212,11 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★☆☆☆',
       cherryNote: '全体的に設定差が小さい。チェリ重REGでの判別も困難。ぶどう+合算確率での総合判断を優先。',
       sregThresholds: [
-        { max: 250, color: 'var(--accent)', msg: '単独REG良好（ゴージャグは設定差小）' },
-        { max: 310, color: 'var(--gold)', msg: '単独REGやや良好' },
+        { max: 250, color: '#ff3b5c', msg: '単独REG良好（ゴージャグは設定差小）' },
+        { max: 310, color: '#f5d020', msg: '単独REGやや良好' },
       ],
       cregThresholds: [
-        { max: 700, color: 'var(--teal)', msg: 'チェリ重REGはまずまず（ゴージャグは参考程度）' },
+        { max: 700, color: '#00d4aa', msg: 'チェリ重REGはまずまず（ゴージャグは参考程度）' },
       ]
     },
     girl: {
@@ -1224,12 +1224,12 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★★☆☆',
       cherryNote: '合算確率とぶどうが主軸。チェリ重REGにも設定差あり、補完的に使用。',
       sregThresholds: [
-        { max: 280, color: 'var(--accent)', msg: '単独REG優秀！設定⑤〜⑥水準' },
-        { max: 320, color: 'var(--gold)', msg: '設定④〜⑤水準' },
+        { max: 280, color: '#ff3b5c', msg: '単独REG優秀！設定⑤〜⑥水準' },
+        { max: 320, color: '#f5d020', msg: '設定④〜⑤水準' },
       ],
       cregThresholds: [
-        { max: 600, color: 'var(--accent)', msg: 'チェリ重REG優秀！' },
-        { max: 800, color: 'var(--gold)', msg: 'チェリ重REG良好' },
+        { max: 600, color: '#ff3b5c', msg: 'チェリ重REG優秀！' },
+        { max: 800, color: '#f5d020', msg: 'チェリ重REG良好' },
       ]
     },
     mr: {
@@ -1237,13 +1237,13 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★★☆☆',
       cherryNote: '単独REGとチェリ重REG両方に設定差あり。ぶどうとセットで判断。',
       sregThresholds: [
-        { max: 260, color: 'var(--accent)', msg: '単独REG優秀！設定⑤〜⑥水準' },
-        { max: 300, color: 'var(--gold)', msg: '設定④〜⑤水準' },
-        { max: 340, color: 'var(--teal)', msg: '設定③〜④水準' },
+        { max: 260, color: '#ff3b5c', msg: '単独REG優秀！設定⑤〜⑥水準' },
+        { max: 300, color: '#f5d020', msg: '設定④〜⑤水準' },
+        { max: 340, color: '#00d4aa', msg: '設定③〜④水準' },
       ],
       cregThresholds: [
-        { max: 650, color: 'var(--accent)', msg: 'チェリ重REG優秀！' },
-        { max: 850, color: 'var(--gold)', msg: 'チェリ重REG良好' },
+        { max: 650, color: '#ff3b5c', msg: 'チェリ重REG優秀！' },
+        { max: 850, color: '#f5d020', msg: 'チェリ重REG良好' },
       ]
     },
     ultra: {
@@ -1251,12 +1251,12 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       cherryImportance: '★★★☆☆',
       cherryNote: 'BIG確率が設定6で突出して高い機種。チェリ重BIG回数も設定判別に使える。',
       sregThresholds: [
-        { max: 290, color: 'var(--accent)', msg: '単独REG優秀！設定⑤〜⑥水準' },
-        { max: 350, color: 'var(--gold)', msg: '設定④〜⑤水準' },
+        { max: 290, color: '#ff3b5c', msg: '単独REG優秀！設定⑤〜⑥水準' },
+        { max: 350, color: '#f5d020', msg: '設定④〜⑤水準' },
       ],
       cregThresholds: [
-        { max: 600, color: 'var(--accent)', msg: 'チェリ重REG優秀！' },
-        { max: 800, color: 'var(--gold)', msg: 'チェリ重REG良好' },
+        { max: 600, color: '#ff3b5c', msg: 'チェリ重REG優秀！' },
+        { max: 800, color: '#f5d020', msg: 'チェリ重REG良好' },
       ]
     }
   };
@@ -1299,10 +1299,10 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
     if (tG > 0 && pG > 0) {
       autoEl.style.display = 'block';
       autoEl.innerHTML = `
-        <span style="color:var(--teal); font-weight:700;">自分の分（自動計算）</span>　
-        G数: <span style="color:var(--text); font-weight:700;">${mG.toLocaleString()}</span>　
-        BIG: <span style="color:var(--text); font-weight:700;">${mBIG}</span>　
-        REG: <span style="color:var(--text); font-weight:700;">${mREG}</span>
+        <span style="color:#00d4aa; font-weight:700;">自分の分（自動計算）</span>　
+        G数: <span style="color:#f0f0ff; font-weight:700;">${mG.toLocaleString()}</span>　
+        BIG: <span style="color:#f0f0ff; font-weight:700;">${mBIG}</span>　
+        REG: <span style="color:#f0f0ff; font-weight:700;">${mREG}</span>
       `;
     } else {
       autoEl.style.display = 'none';
@@ -1340,15 +1340,15 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
     const sRegNum   = sRegProb  ? parseFloat(sRegProb)  : null;
     const cRegNum   = cRegProb  ? parseFloat(cRegProb)  : null;
 
-    if      (gassanNum < 120) hint += `<span style="color:var(--accent)">● 合算が非常に良い（設定⑤〜⑥水準）</span><br>`;
-    else if (gassanNum < 130) hint += `<span style="color:var(--gold)">● 合算が良好（設定④〜⑤水準）</span><br>`;
-    else if (gassanNum < 145) hint += `<span style="color:var(--teal)">● 合算はやや良好（設定③〜④水準）</span><br>`;
+    if      (gassanNum < 120) hint += `<span style="color:#ff3b5c">● 合算が非常に良い（設定⑤〜⑥水準）</span><br>`;
+    else if (gassanNum < 130) hint += `<span style="color:#f5d020">● 合算が良好（設定④〜⑤水準）</span><br>`;
+    else if (gassanNum < 145) hint += `<span style="color:#00d4aa">● 合算はやや良好（設定③〜④水準）</span><br>`;
     else                      hint += `<span style="color:#a0a0c0">● 合算は低設定水準またはサンプル不足</span><br>`;
 
     if (bdNum) {
-      if      (bdNum < 5.75) hint += `<span style="color:var(--accent)">● ぶどう非常に優秀（マイジャグ設定⑥水準）</span><br>`;
-      else if (bdNum < 5.85) hint += `<span style="color:var(--gold)">● ぶどう良好（設定⑤〜⑥水準）</span><br>`;
-      else if (bdNum < 6.0)  hint += `<span style="color:var(--teal)">● ぶどうやや良好（設定④〜⑤水準）</span><br>`;
+      if      (bdNum < 5.75) hint += `<span style="color:#ff3b5c">● ぶどう非常に優秀（マイジャグ設定⑥水準）</span><br>`;
+      else if (bdNum < 5.85) hint += `<span style="color:#f5d020">● ぶどう良好（設定⑤〜⑥水準）</span><br>`;
+      else if (bdNum < 6.0)  hint += `<span style="color:#00d4aa">● ぶどうやや良好（設定④〜⑤水準）</span><br>`;
       else                   hint += `<span style="color:#a0a0c0">● ぶどうは低設定水準（自分カウント）</span><br>`;
     }
 
@@ -1376,14 +1376,14 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
 
     if (brRatio && BIG >= 5 && REG >= 5) {
       if (parseFloat(brRatio) >= 0.85 && parseFloat(brRatio) <= 1.15) {
-        hint += `<span style="color:var(--accent)">● BIG:REG比率 ≈ 1:1 → 設定⑤〜⑥サイン</span><br>`;
+        hint += `<span style="color:#ff3b5c">● BIG:REG比率 ≈ 1:1 → 設定⑤〜⑥サイン</span><br>`;
       }
     }
 
     const cherryBlock = `
-      <div style="margin-top:12px; padding:10px 12px; background:var(--surface2); border:1px solid var(--border); border-radius:6px; font-size:0.75rem; line-height:1.8;">
-        <span style="color:var(--accent2); font-weight:700;">[${mc.name}] チェリ重重要度 ${mc.cherryImportance}</span><br>
-        <span style="color:var(--text);">${mc.cherryNote}</span>
+      <div style="margin-top:12px; padding:10px 12px; background:#1c1c2a; border:1px solid #2a2a40; border-radius:6px; font-size:0.75rem; line-height:1.8;">
+        <span style="color:#ffb800; font-weight:700;">[${mc.name}] チェリ重重要度 ${mc.cherryImportance}</span><br>
+        <span style="color:#f0f0ff;">${mc.cherryNote}</span>
       </div>`;
 
     const totalSection = `
@@ -1395,13 +1395,13 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;">
       </div>`;
 
     const mySection = (mG > 0 && (budouProb || sRegProb || cRegProb || cBigProb)) ? `
-      <div style="border-top:1px solid var(--border); padding-top:12px; margin-bottom:10px;">
-        <div style="font-size:0.68rem; color:var(--teal); letter-spacing:0.1em; margin-bottom:8px;">自分カウント分（${mG.toLocaleString()}G）</div>
+      <div style="border-top:1px solid #2a2a40; padding-top:12px; margin-bottom:10px;">
+        <div style="font-size:0.68rem; color:#00d4aa; letter-spacing:0.1em; margin-bottom:8px;">自分カウント分（${mG.toLocaleString()}G）</div>
         <div style="display:flex; gap:16px; flex-wrap:wrap;">
-          ${budouProb ? `<div><div class="res-label">ぶどう確率</div><div class="res-big" style="color:var(--gold)">1/${budouProb}</div></div>` : ''}
-          ${sRegProb && mCREG > 0 ? `<div><div class="res-label">単独REG確率</div><div class="res-big" style="color:var(--teal)">1/${sRegProb}</div></div>` : ''}
-          ${cRegProb ? `<div><div class="res-label">チェリ重REG確率</div><div class="res-big" style="color:var(--accent2)">1/${cRegProb}</div></div>` : ''}
-          ${cBigProb ? `<div><div class="res-label">チェリ重BIG確率</div><div class="res-big" style="color:var(--accent2)">1/${cBigProb}</div></div>` : ''}
+          ${budouProb ? `<div><div class="res-label">ぶどう確率</div><div class="res-big" style="color:#f5d020">1/${budouProb}</div></div>` : ''}
+          ${sRegProb && mCREG > 0 ? `<div><div class="res-label">単独REG確率</div><div class="res-big" style="color:#00d4aa">1/${sRegProb}</div></div>` : ''}
+          ${cRegProb ? `<div><div class="res-label">チェリ重REG確率</div><div class="res-big" style="color:#ffb800">1/${cRegProb}</div></div>` : ''}
+          ${cBigProb ? `<div><div class="res-label">チェリ重BIG確率</div><div class="res-big" style="color:#ffb800">1/${cBigProb}</div></div>` : ''}
         </div>
       </div>` : '';
 
